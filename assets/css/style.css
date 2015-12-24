@@ -50,7 +50,7 @@ html {
 
 body {
   color: #6a6a6a; 
-  background: #f1f0f0;
+  background: #D8D8D8;
 }
 
 p {
@@ -686,4 +686,8 @@ h2.footer-block {
 }
 button.navbar-toggle.collapsed {
   margin-top: 40px;
+}
+
+.circular-img {
+  padding-bottom: 10px;
 }
