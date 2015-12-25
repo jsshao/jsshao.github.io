@@ -366,6 +366,17 @@ h1.logo {
   position: relative;
   z-index: 1;
 }
+
+#resume {
+  width: 90%;
+  height: 400px;
+}
+
+#resume-span{
+  margin-top: 80px;
+  position: relative;
+}
+
 .recent-work:before {
     background: rgba(2, 56, 58, 0.7);
     height: 100%;
@@ -461,6 +472,7 @@ i.aboutus-icon {
   text-align: center;
   color: rgb(106, 106, 106);
 }
+
 
 h4.aboutus-title {
   font-family: 'Raleway', sans-serif;
@@ -567,6 +579,10 @@ ol.carousel-indicators {
 
 
 #footer{ background: #2B3E51; color: white; border-top: 1px solid rgba(255, 255, 255, 0.24);}
+
+.footer-padding {
+   padding-top: 100px;
+}
 
 h2.footer-block {
     color: white;
@@ -690,4 +706,8 @@ button.navbar-toggle.collapsed {
 
 .circular-img {
   padding-bottom: 10px;
+}
+
+#message {
+  height: 233px;
 }
