@@ -229,7 +229,7 @@
 										<i class="fa fa-calculator"></i>
 									</div>	
 									<h2 class="service-head">Mathematics</h2>
-									<p>My passion for programming stemmed from my original skills in mathematical fields. I have a solid foundation in algebra and combinatorics by focusing on number theory and graph theory. I am also familiar with probability theory and basic statistics. </p>
+									<p>My passion for programming stems from my original skills in mathematical fields. I have a solid foundation in algebra and combinatorics by focusing on number theory and graph theory. I am also familiar with probability theory and basic statistics. </p>
 								</div>
 							</div>
 						</div>
@@ -409,7 +409,7 @@
 							</div>
 							<div class="col-sm-4 blog-post">
 								<h2 class="footer-block">Leave me a message</h2>
-								<form action="contact-form.php" id="contactForm" method="post" name="contactform" class="" role="form">
+								<form id="contactForm" name="contactform" class="" role="form">
 									<div class="form-group">
 								    	<input type="text" class="form-control form-control-white" id="name" name="name" placeholder="Your Name" required>
 								  	</div>
@@ -511,7 +511,21 @@
 		 		};   	
 			});
 
-		  });
+            $(document).ready(function() {
+                $("#cfsubmit").click(function()
+                 {
+                     var name = $('#name').val();
+                     var body = $('#message').val();
+                     var sender = $('#email').val();
+                     var message = body + '\n\n' + "Reply to me at " + sender;
+                     message = encodeURIComponent(message.trim());
+
+                     if ($('#name').is(':valid') && $('#message').is(':valid') && $('#email').is(':valid'))
+                         document.location.href = "mailto:jasonshao8@gmail.com?subject=Hello%20From%20"
+                                                  + name +" &body=" + message;
+                 });
+            });
+		});
 
 		jQuery('.scroll').on('click', function(e){		
 				e.preventDefault()

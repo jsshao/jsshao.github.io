@@ -5,7 +5,7 @@
 $(document).ready(function () {
 
     $("#contactForm").submit(function(e){
-
+        /*
         e.preventDefault();
         var $ = jQuery;
 
@@ -30,9 +30,10 @@ $(document).ready(function () {
                 },
                 error: function(data)
                 {
-                    alert("Error occurd! Please try again");
+                    alert("Error occured! Please try again");
                 }
             });
+        */
 
         return false;
 

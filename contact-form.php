@@ -43,8 +43,8 @@
 	$email = $_POST['email'];
 	$message = $_POST['massage'];
 	$from = $email;
-	$to = 'info@themewagon.com';  // please change this email id
-	$subject = 'Contact Form : Avada Plus - Agency Portfolio Website Template';
+	$to = 'jasonshao8@gmail.com';  // please change this email id
+	$subject = 'Contact Form : Website Contact';
 	
 	$body = "From: $name\n E-Mail: $email\n Message:\n $message";
 
