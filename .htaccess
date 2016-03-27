@@ -4,6 +4,8 @@ RewriteEngine On
 RewriteBase /
 RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
 RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^198\.199\.78\.57
+RewriteRule (.*) http://www.jasonshao.com/$1 [R=301,L]
 
 # compress text, html, javascript, css, xml:
 AddOutputFilterByType DEFLATE text/plain
